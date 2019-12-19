@@ -17,6 +17,7 @@ body {
 
 .location-timezone{
     font-size: 3rem;
+    margin-right: 1px;
 }
 .location,
 .temperature {
