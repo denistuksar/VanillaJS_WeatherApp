@@ -33,15 +33,7 @@ window.addEventListener('load', () => {
                 //Set Icon
                 setIcons(icon, document.querySelector('.icon'));
                 //Change Temperature to Celsius/Farenheit
-                temperatureSection.addEventListener('click', () => {
-                    if (temperatureSpan.textContent === "F") {
-                        temperatureSpan.textContent = "°C";
-                        temperatureDegree.textContent= celsius;
-                    } else {
-                        temperatureSpan.textContent = "F";
-                        temperatureDegree.textContent=temperature;
-                    }
-                })
+                temperatureSection.addEventListener('click', () => convert(temperature, celsius));
             })
     }
 
@@ -58,5 +50,15 @@ window.addEventListener('load', () => {
         const currentIcon = icon.replace(/-/g, "_").toUpperCase();
         skycons.play();
         return skycons.set(iconID, Skycons[currentIcon]);
+    }
+
+    function convert(temperature, celsius){
+        if (temperatureSpan.textContent === "F") {
+            temperatureSpan.textContent = "°C";
+            temperatureDegree.textContent= celsius;
+        } else {
+            temperatureSpan.textContent = "F";
+            temperatureDegree.textContent=temperature;
+        }
     }
 });

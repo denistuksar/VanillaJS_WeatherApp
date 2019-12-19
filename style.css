@@ -15,6 +15,9 @@ body {
     color: white;
 }
 
+.location-timezone{
+    font-size: 3rem;
+}
 .location,
 .temperature {
     height: 30vh;
