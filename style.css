@@ -21,8 +21,7 @@ body {
 }
 .location,
 .temperature {
-    height: 30vh;
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -48,8 +47,9 @@ body {
 }
 
 .temperature-description{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     text-align: center;
+    text-transform: uppercase;
 }
 
 @media only screen and (max-width: 650px) {
